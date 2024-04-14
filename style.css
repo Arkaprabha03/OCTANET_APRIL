@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('image1.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    top: 20px; /* Adjust the distance from the top */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    margin-right: 5px;
+    font-size: 16px;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+li {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: transparent; /* Fully transparent background */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.delete, .complete, .edit {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+    right: 30px;
+}
+
+.complete {
+    right: 60px; /* Move the complete button further right */
+}
+
+.edit {
+    right: 10px; /* Position the edit button next to the complete button */
+    color: blue; /* Customize the color of the edit button */
+}
